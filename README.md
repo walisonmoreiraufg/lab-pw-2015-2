@@ -1,1 +1,1 @@
-# ufg-inf-pw-2015-2
+# Laboratório de PW 2015/2
