@@ -4,6 +4,11 @@ Goal do Maven para executar a aplicação com o Tomcat:
 
 `org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run`
 
+Para rodar numa porta específica, coloque o seguinte parâmetro:
+
+Nome do parâmetro: `maven.tomcat.port`
+Valor do parâmetro: `9090`
+
 Vídeos das aulas
 
 * [Aula 1](https://www.dropbox.com/s/jkmqheu97lt4h6y/aula-01.zip?dl=0)
