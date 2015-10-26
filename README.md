@@ -28,6 +28,7 @@
 * [Digital Ocean](https://www.digitalocean.com/)
 * [Foundation](http://foundation.zurb.com/)
 * [Semantic UI](http://semantic-ui.com/)
+* [Flat Design vs Realism](http://www.flatvsrealism.com/)
  
 ## Executando a Aplicação
 
