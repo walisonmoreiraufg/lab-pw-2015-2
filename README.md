@@ -6,6 +6,7 @@
 
 * [Aula 1](https://www.dropbox.com/s/jkmqheu97lt4h6y/aula-01.zip?dl=0)
 * [Aula 2](https://www.dropbox.com/s/rv1qr9pfhrj9nwf/aula-02.zip?dl=0)
+* [Aula 3](https://www.dropbox.com/s/7e7qyan4cv323zg/aula-03.zip?dl=0)
 
 ### Materiais
 
