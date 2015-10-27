@@ -1,3 +1,4 @@
+
 # Laboratório de PW 2015/2
 
 ## Links
@@ -6,6 +7,7 @@
 
 * [Aula 1](https://www.dropbox.com/s/jkmqheu97lt4h6y/aula-01.zip?dl=0)
 * [Aula 2](https://www.dropbox.com/s/rv1qr9pfhrj9nwf/aula-02.zip?dl=0)
+* [Aula 3](https://www.dropbox.com/s/7e7qyan4cv323zg/aula-03.zip?dl=0)
 
 ### Materiais
 
@@ -40,11 +42,3 @@ Para rodar numa porta específica, coloque o seguinte parâmetro:
 
 Nome do parâmetro: `maven.tomcat.port`
 Valor do parâmetro: `9090`
-
-## Modelo Web
-
-![web-model-01.png](src/site/web-model-01.png)
-![web-model-02.png](src/site/web-model-02.png)
-![web-model-03.png](src/site/web-model-03.png)
-![web-model-04.png](src/site/web-model-04.png)
-![web-model-05.png](src/site/web-model-05.png)
