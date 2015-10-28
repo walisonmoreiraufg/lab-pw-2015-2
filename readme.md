@@ -12,6 +12,9 @@
 ### Materiais
 
 * [W3Schools](http://www.w3schools.com/) - Online Web Tutorials (site)
+  * [HTML](http://www.w3schools.com/html/)
+  * [CSS](http://www.w3schools.com/css/)
+  * [Java Script](http://www.w3schools.com/js/)
 * [Aplicações Java para a web com JSF e JPA](http://www.casadocodigo.com.br/products/livro-jsf-jpa) (livro)
 * [JSF Eficaz](http://www.casadocodigo.com.br/products/livro-jsf-eficaz) (livro)
 * [Coletânea Front-end](http://www.casadocodigo.com.br/products/livro-coletanea-front-end) (livro)
