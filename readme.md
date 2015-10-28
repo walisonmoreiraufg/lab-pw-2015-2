@@ -48,12 +48,6 @@ Valor do parâmetro: `9090`
 
 ## Modelo Web
 
-![web-model-01.png](src/site/web-model-01.png)
-
-![web-model-02.png](src/site/web-model-02.png)
-
-![web-model-03.png](src/site/web-model-03.png)
-
-![web-model-04.png](src/site/web-model-04.png)
-
-![web-model-05.png](src/site/web-model-05.png)
+Comunicação Client/Server                      | Interação com o Usuário
+---------------------------------------------- | ----------------------------------------------
+![web-model-01.png](src/site/web-model-01.png) | ![web-model-02.png](src/site/web-model-02.png)
