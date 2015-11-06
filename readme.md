@@ -30,6 +30,7 @@
 
 ### JSP
 
+* [Tutorials Point - JSP Tutorial](http://www.tutorialspoint.com/jsp/)
 * [The Java EE 5 Tutorial - JSP](http://docs.oracle.com/javaee/5/tutorial/doc/bnagx.html)
  
 ### Outros
