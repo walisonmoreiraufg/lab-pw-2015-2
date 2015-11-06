@@ -24,22 +24,22 @@
     <input type="submit">
   </form>
   Apelido Minúsculo: <%
-  
+  //Obtém o parâmetro.
   String apelido = request.getParameter("apelido");
+  //Se o parâmetro não for passado, atribui vazio.
   apelido = apelido == null ? "" : apelido;
+  
   out.print(apelido.toLowerCase());
   %>
   <br>
   Nome Maiúsculo:
-  <h2>
   <%
   //Obtém o parâmetro.
   String nome = request.getParameter("nome");
-  
+  //Se o parâmetro não for passado, atribui vazio.
   nome = nome == null ? "" : nome;
   out.print(nome.toUpperCase());
   %>
-  </h2>
 </body>
 </html>
 
