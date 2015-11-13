@@ -39,6 +39,7 @@
 * [Foundation](http://foundation.zurb.com/)
 * [Semantic UI](http://semantic-ui.com/)
 * [Flat Design vs Realism](http://www.flatvsrealism.com/)
+* [Animate.css](https://daneden.github.io/animate.css/)
  
 ## Executando a Aplicação
 
