@@ -28,7 +28,7 @@ public class CalculoIMCControle extends HttpServlet {
     cImc.calcularImc();
     cImc.calcularResultado();
     
-    req.setAttribute("imc", cImc);
+    req.setAttribute("imc", cImc); //Passando um objeto para o JSP.
     
     //Chamar o JSP apenas para mostrar o resultado.
     req.getRequestDispatcher("mvc/imc.jsp").forward(req, resp);

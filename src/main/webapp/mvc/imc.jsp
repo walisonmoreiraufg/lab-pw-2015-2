@@ -43,9 +43,10 @@
             </form>
             <br>
             <%
-            mvc.CalculoIMCModel imc = (mvc.CalculoIMCModel) request.getAttribute("imc");
+            //Obtendo a variável definida no servlet.
+            mvc.CalculoIMCModel calculoImc = (mvc.CalculoIMCModel) request.getAttribute("imc");
             //Se parâmetros inválidos, ...
-            if (imc.getPeso() == 0 || imc.getAltura() == 0) {
+            if (calculoImc.getPeso() == 0 || calculoImc.getAltura() == 0) {
 %>
 <!-- Aqui posso colocar HTML. -->
 <div class="alert alert-danger" role="alert">Coloque algum valor nos campos Peso e Altura.</div>
@@ -54,9 +55,9 @@
               %>
 <!-- Aqui posso colocar HTML. -->
 <div class="alert alert-success" role="alert">
-IMC: <%=imc.getImc()%>
+IMC: <%=calculoImc.getImc()%>
 <br>
-Resultado: ${imc.resultado}
+Resultado: ${calculoImc.resultado}
 </div>
               <%
             }
