@@ -40,7 +40,8 @@
 * [Semantic UI](http://semantic-ui.com/)
 * [Flat Design vs Realism](http://www.flatvsrealism.com/)
 * [Animate.css](https://daneden.github.io/animate.css/)
- 
+* [Balsamiq Mockups](https://balsamiq.com/products/mockups/)
+
 ## Executando a Aplicação
 
 Goal do Maven para executar a aplicação com o Tomcat:
