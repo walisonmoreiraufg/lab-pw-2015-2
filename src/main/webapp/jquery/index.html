@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<script
+  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script
+  src="http://anthonyterrien.com/js/jquery.knob.js"></script>
+<title>jQuery</title>
+</head>
+<body>
+  <h1>jQuery</h1>
+  <form>
+    <b>Informe a porcentagem:</b>
+    <br>
+    <input type="text" name="porcentagem" value="75" class="dial">
+    <br>
+    <input type="submit">
+  </form>
+<script>
+  $(function() {
+    $(".dial").knob();
+  });
+</script>
+</body>
+</html>
