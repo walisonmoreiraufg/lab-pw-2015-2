@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>Sessão</h1>
-  <a href="pagina-01.html">Página 1</a>
+  <a href="pagina-privada.html">Página Privada</a>
   <br>
   <a href="logout">Logout</a>
 </body>

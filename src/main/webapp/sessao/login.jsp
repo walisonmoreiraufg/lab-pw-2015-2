@@ -9,11 +9,12 @@
   <br>
   <h2>Login</h2>
   <form action="login">
-  Usuário: <input type="text" name="usuario"> 
+  Usuário (joao): <input type="text" name="usuario"> 
   <br>
-  Senha: <input type="password" name="senha">
+  Senha (123): <input type="password" name="senha">
   <br>
   <input type="submit">
   </form>
-</body>
+  <br>
+  <a href="menu">Menu</a></body>
 </html>
