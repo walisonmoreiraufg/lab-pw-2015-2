@@ -41,6 +41,7 @@
 * [Flat Design vs Realism](http://www.flatvsrealism.com/)
 * [Animate.css](https://daneden.github.io/animate.css/)
 * [Balsamiq Mockups](https://balsamiq.com/products/mockups/)
+* [SQuirreL SQL Client](http://squirrel-sql.sourceforge.net/)
 
 ## Executando a Aplicação
 
