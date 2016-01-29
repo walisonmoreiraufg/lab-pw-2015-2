@@ -1,6 +1,7 @@
 package bancodados.cadastroaluno;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,6 +40,9 @@ public class CadastroAlunoControle extends HttpServlet {
     }
     
     req.setAttribute("aluno", aluno); //Passando um objeto para o JSP.
+    
+    List<Aluno> alunos = Aluno.listar();
+    req.setAttribute("alunos", alunos); //Passando uma coleção para o JSP.
     
     //Chamar o JSP apenas para mostrar o resultado.
     req.getRequestDispatcher("CadastroAlunoView.jsp").forward(req, resp);

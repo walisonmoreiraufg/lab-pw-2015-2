@@ -1,4 +1,6 @@
 <!doctype html>
+<%@page import="bancodados.cadastroaluno.Aluno"%>
+<%@page import="java.util.List"%>
 <html>
 <head>
 <meta charset="utf-8">
@@ -67,7 +69,38 @@ Matrícula: <%=aluno.getMatricula()%>
               <%
             }
             %>
-            <br>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Matrícula</th>
+      <th>Nome</th>
+      <th>Fone</th>
+      <th>CPF</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%
+List<Aluno> alunos = (List<Aluno>) request.getAttribute("alunos");
+if (alunos != null && !alunos.isEmpty()) {
+  for (Aluno a:alunos) {
+%>
+    <tr>
+      <th><%=a.getMatricula()%></th>
+      <td><%=a.getNome()%></td>
+      <td><%=a.getFone()%></td>
+      <td><%=a.getCpf()%></td>
+      <td><a href="#">Alterar</a></td>
+      <td><a href="#">Excluir</a></td>
+    </tr>
+<%
+  }
+}
+%>
+  </tbody>
+
+</table>
           </div>
         </div>
       </div>
