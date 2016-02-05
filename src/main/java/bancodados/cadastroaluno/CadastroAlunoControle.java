@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import bancodados.cadastroaluno.dao.AlunoDao;
+import bancodados.cadastroaluno.dao.FabricaDeAlunoDao;
+
 @WebServlet(value = "/bancodados/CadastroAluno")
 public class CadastroAlunoControle extends HttpServlet {
 
@@ -16,6 +19,9 @@ public class CadastroAlunoControle extends HttpServlet {
       HttpServletRequest req,
       HttpServletResponse resp)
       throws ServletException, IOException {
+
+    String paramTipoDeAluno = req.getParameter("tipoDeAluno");
+    String tipoDeAluno = paramTipoDeAluno == null ? "normal" : paramTipoDeAluno;
 
     String paramMatricula = req.getParameter("matricula");
     String matricula = paramMatricula == null ? "" : paramMatricula;
@@ -34,14 +40,15 @@ public class CadastroAlunoControle extends HttpServlet {
     aluno.setNome(nome);
     aluno.setFone(fone);
     aluno.setCpf(cpf);
+    
+    AlunoBo alunoBo = new AlunoBo(tipoDeAluno);
 
-    if (!matricula.equals("")) {
-      aluno.incluir();
-    }
-    
+    alunoBo.incluir(aluno);
+
     req.setAttribute("aluno", aluno); //Passando um objeto para o JSP.
-    
-    List<Aluno> alunos = Aluno.listar();
+
+    List<Aluno> alunos = alunoBo.listar();
+
     req.setAttribute("alunos", alunos); //Passando uma coleção para o JSP.
     
     //Chamar o JSP apenas para mostrar o resultado.

@@ -32,6 +32,10 @@
             <form role="form">
               <fieldset>
                 <div class="form-group">
+                  <input class="form-control" placeholder="Tipo de aluno (normal, ead)" name="tipoDeAluno"
+                    type="text" value="${param.tipoDeAluno}">
+                </div>
+                <div class="form-group">
                   <input class="form-control" placeholder="Matrícula" name="matricula"
                     type="text" value="${param.matricula}">
                 </div>
