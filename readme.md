@@ -32,7 +32,7 @@
 
 * [Tutorials Point - JSP Tutorial](http://www.tutorialspoint.com/jsp/)
 * [The Java EE 5 Tutorial - JSP](http://docs.oracle.com/javaee/5/tutorial/doc/bnagx.html)
- 
+
 ### Outros
 
 * [Digital Ocean](https://www.digitalocean.com/)
@@ -61,3 +61,22 @@ Valor do parâmetro: `9090`
 Comunicação Client/Server                      | Interação com o Usuário
 ---------------------------------------------- | ----------------------------------------------
 ![web-model-01.png](src/site/web-model-01.png) | ![web-model-02.png](src/site/web-model-02.png)
+
+## Segunda Prova
+
+* Organização do sistema em camadas lógicas de aplicação.
+  * Data Access Object (DAO).
+  * Business Object (BO).
+  * Integração dos padrões MVC, DAO e BO
+* Comunicação com banco de dados.
+  * Java Database Connectivity (JDBC)
+    * Obtentendo conexão com o banco de dados.
+    * Gravando dados.
+    * Obtendo dados.
+    * Trabalhando com transações.
+  * Java Persistence API (JPA)
+    * Obtentendo conexão com o banco de dados.
+    * Gravando dados.
+    * Obtendo dados.
+    * Trabalhando com transações.
+    * Pool de conexões.
