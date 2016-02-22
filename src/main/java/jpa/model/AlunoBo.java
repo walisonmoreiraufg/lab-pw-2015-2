@@ -1,4 +1,4 @@
-package jpa;
+package jpa.model;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class AlunoBo {
 
   public void incluir(Aluno aluno) {
     if (!aluno.getMatricula().equals("")) {
-      alunoDao.incluir(aluno);
+      alunoDao.gravar(aluno);
     }
   }
 

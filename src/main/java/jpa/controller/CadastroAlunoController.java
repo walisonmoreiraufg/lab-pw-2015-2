@@ -1,4 +1,4 @@
-package jpa;
+package jpa.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,11 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import bancodados.cadastroaluno.dao.AlunoDao;
-import bancodados.cadastroaluno.dao.FabricaDeAlunoDao;
+import jpa.model.Aluno;
+import jpa.model.AlunoBo;
+import jpa.model.Pessoa;
 
 @WebServlet(value = "/jpa/CadastroAluno")
-public class CadastroAlunoControle extends HttpServlet {
+public class CadastroAlunoController extends HttpServlet {
 
   protected void service(
       HttpServletRequest req,
@@ -32,12 +33,40 @@ public class CadastroAlunoControle extends HttpServlet {
     String paramCpf = req.getParameter("cpf");
     String cpf = paramCpf == null ? "" : paramCpf;
 
+    String paramAtivo = req.getParameter("ativo");
+    String ativo = paramAtivo == null ? "" : paramAtivo;
+
     Aluno aluno = new Aluno();
     aluno.setMatricula(matricula);
     aluno.setNome(nome);
     aluno.setFone(fone);
     aluno.setCpf(cpf);
+    aluno.setAtivo(ativo);
     
+    String paramCpfMae = req.getParameter("cpfMae");
+    String cpfMae = paramCpfMae == null ? "" : paramCpfMae;
+    
+    String paramNomeMae = req.getParameter("nomeMae");
+    String nomeMae = paramNomeMae == null ? "" : paramNomeMae;
+
+    Pessoa mae = new Pessoa();
+    mae.setCpf(cpfMae);
+    mae.setNome(nomeMae);
+
+    aluno.setMae(mae);
+
+    String paramCpfPai = req.getParameter("cpfPai");
+    String cpfPai = paramCpfPai == null ? "" : paramCpfPai;
+    
+    String paramNomePai = req.getParameter("nomePai");
+    String nomePai = paramNomePai == null ? "" : paramNomePai;
+
+    Pessoa pai = new Pessoa();
+    pai.setCpf(cpfPai);
+    pai.setNome(nomePai);
+
+    aluno.setPai(pai);
+
     AlunoBo alunoBo = new AlunoBo();
 
     alunoBo.incluir(aluno);

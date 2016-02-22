@@ -44,7 +44,7 @@ public class AlunoDerbyDao implements AlunoDao {
       String url = "jdbc:derby:C:\\banco-de-teste;create=true";
       Connection conn = DriverManager.getConnection(url);
       //Cria a sentença SQL.
-      String sql = "select * from aluno order by matricula";
+      String sql = "select matricula, nome, fone, cpf from aluno order by matricula";
       //Obtém referência para uma sentença SQL.
       PreparedStatement prepareStatement = conn.prepareStatement(sql);
       //Executa a instrução SQL.

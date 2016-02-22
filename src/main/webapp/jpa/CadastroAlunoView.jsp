@@ -1,5 +1,5 @@
 <!doctype html>
-<%@page import="jpa.Aluno"%>
+<%@page import="jpa.model.Aluno"%>
 <%@page import="java.util.List"%>
 <html>
 <head>
@@ -47,13 +47,33 @@
                   <input class="form-control" placeholder="CPF" name="cpf"
                     type="text" value="${param.cpf}">
                 </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Ativo?" name="ativo"
+                    type="text" value="${param.ativo}">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="CPF Mãe" name="cpfMae"
+                    type="text" value="${param.cpfMae}">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Nome Mãe" name="nomeMae"
+                    type="text" value="${param.nomeMae}">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="CPF Pai" name="cpfPai"
+                    type="text" value="${param.cpfPai}">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" placeholder="Nome Pai" name="nomePai"
+                    type="text" value="${param.nomePai}">
+                </div>
                 <input type="submit" class="btn btn-sm btn-success" value="Incluir">
               </fieldset>
             </form>
             <br>
             <%
             //Obtendo a variável definida no servlet.
-            jpa.Aluno aluno = (jpa.Aluno) request.getAttribute("aluno");
+            jpa.model.Aluno aluno = (jpa.model.Aluno) request.getAttribute("aluno");
             //Se parâmetros inválidos, ...
             if (aluno.getMatricula() == null || aluno.getMatricula().trim().equals("")) {
 %>

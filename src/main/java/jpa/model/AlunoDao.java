@@ -1,4 +1,4 @@
-package jpa;
+package jpa.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,9 +7,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import jpa.JpaUtil;
+
 public class AlunoDao {
 
-  public void incluir(Aluno aluno) {
+  public void gravar(Aluno aluno) {
     EntityManager em = null;
     EntityManagerFactory emf = null;
     try {
@@ -21,11 +23,11 @@ public class AlunoDao {
 
       em.getTransaction().begin();
 
-      em.persist(aluno);
+      em.merge(aluno);
 
       em.getTransaction().commit();
     } catch (Exception e) {
-      System.err.println(e.getMessage());
+      e.printStackTrace();
       if (em != null) {
         em.getTransaction().rollback();
       }
@@ -40,6 +42,15 @@ public class AlunoDao {
   }
 
   public List<Aluno> listar() {
-    return new ArrayList<Aluno>();
+    List<Aluno> result = new ArrayList<Aluno>();
+    try {
+      String jpql = "from Aluno where ativo = 'sim' and mae.nome = 'Maria'";
+      result = JpaUtil.getEntityManager().createQuery(jpql, Aluno.class).getResultList();
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      JpaUtil.closeEntityManager();
+    }
+    return result;
   }
 }
